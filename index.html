@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samuel's Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Center the loader */
+
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+
+}
+  </style>
+
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Game Library</a></li>
+              <li><a href="#">Chat</a></li>
+            </ul>
+          </li>
+          <li><a href="newslettersignup.html">NewsLetterSignup</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h3>Right Aligned Navbar</h3>
+      <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+    </div>
+
+    <table>
+      <tr>
+        <td><img class="photo1 circular" src="http://images2.wikia.nocookie.net/__cb20100401233013/lossimpson/es/images/1/16/Guy_Incognito.png" alt="MY FACE BOI!!!"></td>
+        <td><h1>Samuel</h1>
+        <p>Hello! I'm an <i>inexperienced</i> programer that's full of fluids and flesh! (And some crap)</p></td>
+      </tr>
+    </table>
+
+  <hr>
+  <h3>My Videogames I Play (Ranked)</h3>
+  <table>
+    <tr>
+      <td>Age of Empires II HD Edition</td>
+      <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>OverCooked</td>
+      <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>BattleField Hardline</td>
+      <td>⭐⭐⭐⭐✰</td>
+    </tr>
+    <tr>
+      <td>Need For Speed Payback</td>
+      <td>⭐⭐⭐⭐✰</td>
+    </tr>
+    <tr>
+      <td>Minecraft</td>
+      <td>⭐⭐⭐✰✰</td>
+    </tr>
+  </table>
+  <hr>
+  <h3>My Hobbies</h3>
+  <ol>
+    <li>Makin' Websites</li>
+    <li>Playin' With My <b>Mexican</b> Golden Retriever <h6>(Im joking)</h6></li>
+    <li>Playin' Games. (Video Games)</li>
+    <li>Flyin' My Drones.</li>
+
+
+
+  </ol>
+
+  <a href="ContactMePage.html">Contact Me!</a>
+  <a href="gamecollection.">Check out my Library of Games!</a>
+  <a href="chatpage.html">My Chat Area!</a>
+
+
+
+
+
+  </div>
+
+  <script>
+  var myVar;
+
+  function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+
+
+
+
+
+</body>
+
+</html>
